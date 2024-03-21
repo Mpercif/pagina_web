@@ -1,0 +1,125 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.hero_container {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_item{
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 70%;
+    z-index: 3;
+    color: white;
+}
+
+.hero_item__paragraph{
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero_button_cta{
+    width: 200px;
+    display: block;
+    text-align: center;
+    padding: 12px 1px;
+    background: #6C63FF;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #302f41;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    padding: 20px 5px;
+}
+
+.contact_container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact_item {
+    max-width: 250px;
+    color: white;
+}
+
+.contact_item_rrss{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_rrss{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.contact_item .title{
+    font-size: 18px;
+}
+
+.contact_rrss>img{
+    width: 100%;
+    height: 100%;
+}
