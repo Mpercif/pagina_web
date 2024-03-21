@@ -326,6 +326,31 @@ body {
 
 
 
+@media screen and (max-width: 1536px) {
+    .about_paragraph_title_span.left_side{
+        left: -120px;
+    }
+    .about_paragraph.left_side{
+        grid-column: 3/7;
+        grid-row: 3/9;
+    }
+
+    .about_paragraph_text.left_side{
+        left: -90px;
+    }
+
+    .about_list_container.left_side{
+        position: absolute;
+        left: -90px;
+        top: 170px;
+    }
+
+    .about_paragraph_title_span{
+        left: -125px;
+        width: 85%;
+    }
+}
+
 @media screen and (max-width: 1445px) {
     .about_paragraph_title_span.left_side{
         left: -120px;
@@ -350,3 +375,4 @@ body {
         width: 85%;
     }
 }
+
